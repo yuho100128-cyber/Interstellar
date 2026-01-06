@@ -1,5 +1,5 @@
 {
-  "name": "interstellar",
+  "name": "study-resource-manager",
   "version": "5.2.5",
   "type": "module",
   "engines": {
@@ -7,12 +7,9 @@
     "node": ">=16.0.0"
   },
   "scripts": {
-    "start": "node index.js",
-    "format": "pnpm biome format --write .",
-    "precommit": "pnpm run format && pnpm biome check --write .",
-    "lint": "biome lint --write ."
+    "start": "node index.js"
   },
-  "author": "InterstellarNetwork",
+  "author": "student-user",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@nebula-services/bare-server-node": "^2.0.4",
