@@ -12,7 +12,7 @@ import fetch from "node-fetch";
 // import { setupMasqr } from "./Masqr.js";
 import config from "./config.js";
 
-console.log(chalk.yellow("🚀 Starting server..."));
+console.log(chalk.yellow("Checking system...")); // 普通のシステムチェックを装う
 
 const __dirname = process.cwd();
 const server = http.createServer();
@@ -94,11 +94,11 @@ app.use(express.static(path.join(__dirname, "static")));
 app.use("/ca", cors({ origin: true }));
 
 const routes = [
-  { path: "/b", file: "apps.html" },
-  { path: "/a", file: "games.html" },
-  { path: "/play.html", file: "games.html" },
-  { path: "/c", file: "settings.html" },
-  { path: "/d", file: "tabs.html" },
+  { path: "/storage", file: "apps.html" },
+  { path: "/data", file: "games.html" },
+  { path: "/main", file: "games.html" },
+  { path: "/pref", file: "settings.html" },
+  { path: "/view", file: "tabs.html" },
   { path: "/", file: "index.html" },
 ];
 
