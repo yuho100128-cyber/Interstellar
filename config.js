@@ -1,8 +1,8 @@
 const config = {
-  challenge: false, // Set to true if you want to enable password protection.
+  challenge: true, // パスワード保護を有効にします
   users: {
-    // You can add multiple users by doing username: 'password'.
-    interstellar: "password",
+    // ユーザー名: "パスワード"
+    "Suggy": "wjg2010",
   },
 };
 
